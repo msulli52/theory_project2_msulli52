@@ -1,0 +1,13 @@
+{w | w contains an even number of 1's} - Nondeterministic
+q_even,q_odd,q_accept,q_reject
+0,1
+0,1,_
+q_even
+q_accept
+q_reject
+q_even,0,q_even,0,R
+q_even,1,q_odd,1,R
+q_even,_,q_accept,_,R
+q_odd,0,q_odd,0,R
+q_odd,1,q_even,1,R
+q_odd,_,q_reject,_,R
